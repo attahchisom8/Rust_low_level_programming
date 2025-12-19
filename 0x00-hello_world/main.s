@@ -1,86 +1,128 @@
+	.def	@feat.00;
+	.scl	3;
+	.type	0;
+	.endef
+	.globl	@feat.00
+@feat.00 = 0
+	.intel_syntax noprefix
 	.file	"main.6c27e56698b29b9b-cgu.0"
-	.section	.text._RINvNtCs14RtPIW9FYI_4core3ptr13drop_in_placeDNtNtB4_5error5ErrorEL_ECs9hI5a4yEjwJ_4main,"ax",@progbits
+	.def	_RINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBG_5error5ErrorEL_EEECs9hI5a4yEjwJ_4main;
+	.scl	2;
+	.type	32;
+	.endef
+	.text
+	.globl	_RINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBG_5error5ErrorEL_EEECs9hI5a4yEjwJ_4main
 	.p2align	4
-	.type	_RINvNtCs14RtPIW9FYI_4core3ptr13drop_in_placeDNtNtB4_5error5ErrorEL_ECs9hI5a4yEjwJ_4main,@function
-_RINvNtCs14RtPIW9FYI_4core3ptr13drop_in_placeDNtNtB4_5error5ErrorEL_ECs9hI5a4yEjwJ_4main:
-	.cfi_startproc
-	subq	$24, %rsp
-	.cfi_def_cfa_offset 32
-	movq	%rdi, 8(%rsp)
-	movq	(%rsi), %rax
-	movq	%rax, 16(%rsp)
-	cmpq	$0, %rax
-	je	.LBB0_2
-	movq	16(%rsp), %rax
-	movq	8(%rsp), %rdi
-	callq	*%rax
-.LBB0_2:
-	addq	$24, %rsp
-	.cfi_def_cfa_offset 8
-	retq
-.Lfunc_end0:
-	.size	_RINvNtCs14RtPIW9FYI_4core3ptr13drop_in_placeDNtNtB4_5error5ErrorEL_ECs9hI5a4yEjwJ_4main, .Lfunc_end0-_RINvNtCs14RtPIW9FYI_4core3ptr13drop_in_placeDNtNtB4_5error5ErrorEL_ECs9hI5a4yEjwJ_4main
-	.cfi_endproc
+_RINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBG_5error5ErrorEL_EEECs9hI5a4yEjwJ_4main:
+.seh_proc _RINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBG_5error5ErrorEL_EEECs9hI5a4yEjwJ_4main
+	sub	rsp, 56
+	.seh_stackalloc 56
+	.seh_endprologue
+	mov	al, r9b
+	mov	r9, r8
+	mov	r8, rdx
+	mov	qword ptr [rsp + 48], rcx
+	lea	rcx, [rsp + 48]
+	lea	rdx, [rip + .Lanon.eb006c45fb93636ac51900f1e4542831.0]
+	mov	byte ptr [rsp + 32], al
+	call	_RNvNtCs8jAdlnFBhmc_3std2rt19lang_start_internal
+	nop
+	.seh_startepilogue
+	add	rsp, 56
+	.seh_endepilogue
+	ret
+	.seh_endproc
 
-	.section	.text._RINvNtCs14RtPIW9FYI_4core3ptr13drop_in_placeINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB4_5error5ErrorEL_EECs9hI5a4yEjwJ_4main,"ax",@progbits
+	.def	_RINvNtCse5rvls7Ejlv_4core3ptr13drop_in_placeDNtNtB4_5error5ErrorEL_ECs9hI5a4yEjwJ_4main;
+	.scl	3;
+	.type	32;
+	.endef
 	.p2align	4
-	.type	_RINvNtCs14RtPIW9FYI_4core3ptr13drop_in_placeINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB4_5error5ErrorEL_EECs9hI5a4yEjwJ_4main,@function
-_RINvNtCs14RtPIW9FYI_4core3ptr13drop_in_placeINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB4_5error5ErrorEL_EECs9hI5a4yEjwJ_4main:
-.Lfunc_begin0:
-	.cfi_startproc
-	.cfi_personality 155, DW.ref.rust_eh_personality
-	.cfi_lsda 27, .Lexception0
-	subq	$40, %rsp
-	.cfi_def_cfa_offset 48
-	movq	%rdi, (%rsp)
-	movq	(%rdi), %rax
-	movq	%rax, 8(%rsp)
-	movq	8(%rdi), %rax
-	movq	(%rax), %rax
-	movq	%rax, 16(%rsp)
-	cmpq	$0, %rax
+_RINvNtCse5rvls7Ejlv_4core3ptr13drop_in_placeDNtNtB4_5error5ErrorEL_ECs9hI5a4yEjwJ_4main:
+.seh_proc _RINvNtCse5rvls7Ejlv_4core3ptr13drop_in_placeDNtNtB4_5error5ErrorEL_ECs9hI5a4yEjwJ_4main
+	sub	rsp, 56
+	.seh_stackalloc 56
+	.seh_endprologue
+	mov	qword ptr [rsp + 40], rcx
+	mov	rax, qword ptr [rdx]
+	mov	qword ptr [rsp + 48], rax
+	cmp	rax, 0
 	je	.LBB1_2
-.Ltmp0:
-	movq	16(%rsp), %rax
-	movq	8(%rsp), %rdi
-	callq	*%rax
-.Ltmp1:
-	jmp	.LBB1_2
+	mov	rax, qword ptr [rsp + 48]
+	mov	rcx, qword ptr [rsp + 40]
+	call	rax
 .LBB1_2:
-	movq	(%rsp), %rdi
-	callq	_RNvXs8_NtCs5ZIj6FPPb5P_5alloc5boxedINtB5_3BoxDNtNtCs14RtPIW9FYI_4core5error5ErrorEL_ENtNtNtBM_3ops4drop4Drop4dropCs9hI5a4yEjwJ_4main
-	addq	$40, %rsp
-	.cfi_def_cfa_offset 8
-	retq
-.LBB1_3:
-	.cfi_def_cfa_offset 48
+	nop
+	.seh_startepilogue
+	add	rsp, 56
+	.seh_endepilogue
+	ret
+	.seh_endproc
+
+	.def	_RINvNtCse5rvls7Ejlv_4core3ptr13drop_in_placeINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtB4_5error5ErrorEL_EECs9hI5a4yEjwJ_4main;
+	.scl	3;
+	.type	32;
+	.endef
+	.p2align	4
+_RINvNtCse5rvls7Ejlv_4core3ptr13drop_in_placeINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtB4_5error5ErrorEL_EECs9hI5a4yEjwJ_4main:
+.Lfunc_begin0:
+.seh_proc _RINvNtCse5rvls7Ejlv_4core3ptr13drop_in_placeINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtB4_5error5ErrorEL_EECs9hI5a4yEjwJ_4main
+	.seh_handler rust_eh_personality, @unwind, @except
+	sub	rsp, 72
+	.seh_stackalloc 72
+	.seh_endprologue
+	mov	qword ptr [rsp + 32], rcx
+	mov	rax, qword ptr [rcx]
+	mov	qword ptr [rsp + 40], rax
+	mov	rax, qword ptr [rcx + 8]
+	mov	rax, qword ptr [rax]
+	mov	qword ptr [rsp + 48], rax
+	cmp	rax, 0
+	je	.LBB2_2
+.Ltmp0:
+	mov	rax, qword ptr [rsp + 48]
+	mov	rcx, qword ptr [rsp + 40]
+	call	rax
+.Ltmp1:
+	jmp	.LBB2_2
+.LBB2_2:
+	mov	rcx, qword ptr [rsp + 32]
+	call	_RNvXs8_NtCs74qXAvjHuUt_5alloc5boxedINtB5_3BoxDNtNtCse5rvls7Ejlv_4core5error5ErrorEL_ENtNtNtBM_3ops4drop4Drop4dropCs9hI5a4yEjwJ_4main
+	nop
+	.seh_startepilogue
+	add	rsp, 72
+	.seh_endepilogue
+	ret
+.LBB2_3:
 .Ltmp3:
-	movq	(%rsp), %rdi
-	callq	_RNvXs8_NtCs5ZIj6FPPb5P_5alloc5boxedINtB5_3BoxDNtNtCs14RtPIW9FYI_4core5error5ErrorEL_ENtNtNtBM_3ops4drop4Drop4dropCs9hI5a4yEjwJ_4main
+	mov	rcx, qword ptr [rsp + 32]
+	call	_RNvXs8_NtCs74qXAvjHuUt_5alloc5boxedINtB5_3BoxDNtNtCse5rvls7Ejlv_4core5error5ErrorEL_ENtNtNtBM_3ops4drop4Drop4dropCs9hI5a4yEjwJ_4main
 .Ltmp4:
-	jmp	.LBB1_6
-.LBB1_4:
+	jmp	.LBB2_6
+.LBB2_4:
 .Ltmp2:
-	movq	%rax, %rcx
-	movl	%edx, %eax
-	movq	%rcx, 24(%rsp)
-	movl	%eax, 32(%rsp)
-	jmp	.LBB1_3
-.LBB1_5:
+	mov	rcx, rax
+	mov	eax, edx
+	mov	qword ptr [rsp + 56], rcx
+	mov	dword ptr [rsp + 64], eax
+	jmp	.LBB2_3
+.LBB2_5:
 .Ltmp5:
-	callq	*_RNvNtCs14RtPIW9FYI_4core9panicking16panic_in_cleanup@GOTPCREL(%rip)
-.LBB1_6:
-	movq	24(%rsp), %rdi
-	callq	_Unwind_Resume@PLT
-.Lfunc_end1:
-	.size	_RINvNtCs14RtPIW9FYI_4core3ptr13drop_in_placeINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB4_5error5ErrorEL_EECs9hI5a4yEjwJ_4main, .Lfunc_end1-_RINvNtCs14RtPIW9FYI_4core3ptr13drop_in_placeINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB4_5error5ErrorEL_EECs9hI5a4yEjwJ_4main
-	.cfi_endproc
-	.section	.gcc_except_table._RINvNtCs14RtPIW9FYI_4core3ptr13drop_in_placeINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB4_5error5ErrorEL_EECs9hI5a4yEjwJ_4main,"a",@progbits
+	call	_RNvNtCse5rvls7Ejlv_4core9panicking16panic_in_cleanup
+.LBB2_6:
+	mov	rcx, qword ptr [rsp + 56]
+	call	_Unwind_Resume
+	int3
+.Lfunc_end0:
+	.seh_handlerdata
+	.text
+	.seh_endproc
+	.section	.xdata,"dr"
 	.p2align	2, 0x0
-GCC_except_table1:
+GCC_except_table2:
 .Lexception0:
 	.byte	255
-	.byte	155
+	.byte	0
 	.uleb128 .Lttbase0-.Lttbaseref0
 .Lttbaseref0:
 	.byte	1
@@ -99,7 +141,7 @@ GCC_except_table1:
 	.uleb128 .Ltmp5-.Lfunc_begin0
 	.byte	1
 	.uleb128 .Ltmp4-.Lfunc_begin0
-	.uleb128 .Lfunc_end1-.Ltmp4
+	.uleb128 .Lfunc_end0-.Ltmp4
 	.byte	0
 	.byte	0
 .Lcst_end0:
@@ -109,284 +151,272 @@ GCC_except_table1:
 .Lttbase0:
 	.byte	0
 	.p2align	2, 0x0
+	.text
 
-	.section	.text._RINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBG_5error5ErrorEL_EEECs9hI5a4yEjwJ_4main,"ax",@progbits
-	.hidden	_RINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBG_5error5ErrorEL_EEECs9hI5a4yEjwJ_4main
-	.globl	_RINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBG_5error5ErrorEL_EEECs9hI5a4yEjwJ_4main
+	.def	_RINvNtNtCs8jAdlnFBhmc_3std3sys9backtrace28___rust_begin_short_backtraceFEINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtB1e_5error5ErrorEL_EEB19_ECs9hI5a4yEjwJ_4main;
+	.scl	3;
+	.type	32;
+	.endef
 	.p2align	4
-	.type	_RINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBG_5error5ErrorEL_EEECs9hI5a4yEjwJ_4main,@function
-_RINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBG_5error5ErrorEL_EEECs9hI5a4yEjwJ_4main:
-	.cfi_startproc
-	pushq	%rax
-	.cfi_def_cfa_offset 16
-	movl	%ecx, %eax
-	movq	%rdx, %rcx
-	movq	%rsi, %rdx
-	movq	%rdi, (%rsp)
-	movq	%rsp, %rdi
-	leaq	.Lanon.0b37f76d925f7dd188429182aeed105f.0(%rip), %rsi
-	movzbl	%al, %r8d
-	callq	*_RNvNtCs4gskUJO80SH_3std2rt19lang_start_internal@GOTPCREL(%rip)
-	popq	%rcx
-	.cfi_def_cfa_offset 8
-	retq
-.Lfunc_end2:
-	.size	_RINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBG_5error5ErrorEL_EEECs9hI5a4yEjwJ_4main, .Lfunc_end2-_RINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBG_5error5ErrorEL_EEECs9hI5a4yEjwJ_4main
-	.cfi_endproc
-
-	.section	.text._RINvNtNtCs4gskUJO80SH_3std3sys9backtrace28___rust_begin_short_backtraceFEINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB1e_5error5ErrorEL_EEB19_ECs9hI5a4yEjwJ_4main,"ax",@progbits
-	.p2align	4
-	.type	_RINvNtNtCs4gskUJO80SH_3std3sys9backtrace28___rust_begin_short_backtraceFEINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB1e_5error5ErrorEL_EEB19_ECs9hI5a4yEjwJ_4main,@function
-_RINvNtNtCs4gskUJO80SH_3std3sys9backtrace28___rust_begin_short_backtraceFEINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB1e_5error5ErrorEL_EEB19_ECs9hI5a4yEjwJ_4main:
-	.cfi_startproc
-	pushq	%rax
-	.cfi_def_cfa_offset 16
-	callq	_RNvYFEINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB9_5error5ErrorEL_EEINtNtNtB9_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main
+_RINvNtNtCs8jAdlnFBhmc_3std3sys9backtrace28___rust_begin_short_backtraceFEINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtB1e_5error5ErrorEL_EEB19_ECs9hI5a4yEjwJ_4main:
+.seh_proc _RINvNtNtCs8jAdlnFBhmc_3std3sys9backtrace28___rust_begin_short_backtraceFEINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtB1e_5error5ErrorEL_EEB19_ECs9hI5a4yEjwJ_4main
+	sub	rsp, 40
+	.seh_stackalloc 40
+	.seh_endprologue
+	call	_RNvYFEINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtB9_5error5ErrorEL_EEINtNtNtB9_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main
 	#APP
 	#NO_APP
-	popq	%rcx
-	.cfi_def_cfa_offset 8
-	retq
-.Lfunc_end3:
-	.size	_RINvNtNtCs4gskUJO80SH_3std3sys9backtrace28___rust_begin_short_backtraceFEINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB1e_5error5ErrorEL_EEB19_ECs9hI5a4yEjwJ_4main, .Lfunc_end3-_RINvNtNtCs4gskUJO80SH_3std3sys9backtrace28___rust_begin_short_backtraceFEINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB1e_5error5ErrorEL_EEB19_ECs9hI5a4yEjwJ_4main
-	.cfi_endproc
+	nop
+	.seh_startepilogue
+	add	rsp, 40
+	.seh_endepilogue
+	ret
+	.seh_endproc
 
-	.section	.text._RNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBI_5error5ErrorEL_EEE0Cs9hI5a4yEjwJ_4main,"ax",@progbits
+	.def	_RNCINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBI_5error5ErrorEL_EEE0Cs9hI5a4yEjwJ_4main;
+	.scl	3;
+	.type	32;
+	.endef
 	.p2align	4
-	.type	_RNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBI_5error5ErrorEL_EEE0Cs9hI5a4yEjwJ_4main,@function
-_RNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBI_5error5ErrorEL_EEE0Cs9hI5a4yEjwJ_4main:
-	.cfi_startproc
-	pushq	%rax
-	.cfi_def_cfa_offset 16
-	movq	(%rdi), %rdi
-	callq	_RINvNtNtCs4gskUJO80SH_3std3sys9backtrace28___rust_begin_short_backtraceFEINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB1e_5error5ErrorEL_EEB19_ECs9hI5a4yEjwJ_4main
-	movq	%rax, %rdi
-	movq	%rdx, %rsi
-	callq	_RNvXs13_NtCs4gskUJO80SH_3std7processINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBD_5error5ErrorEL_EENtB6_11Termination6reportCs9hI5a4yEjwJ_4main
-	movzbl	%al, %eax
-	popq	%rcx
-	.cfi_def_cfa_offset 8
-	retq
-.Lfunc_end4:
-	.size	_RNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBI_5error5ErrorEL_EEE0Cs9hI5a4yEjwJ_4main, .Lfunc_end4-_RNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBI_5error5ErrorEL_EEE0Cs9hI5a4yEjwJ_4main
-	.cfi_endproc
+_RNCINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBI_5error5ErrorEL_EEE0Cs9hI5a4yEjwJ_4main:
+.seh_proc _RNCINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBI_5error5ErrorEL_EEE0Cs9hI5a4yEjwJ_4main
+	sub	rsp, 40
+	.seh_stackalloc 40
+	.seh_endprologue
+	mov	rcx, qword ptr [rcx]
+	call	_RINvNtNtCs8jAdlnFBhmc_3std3sys9backtrace28___rust_begin_short_backtraceFEINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtB1e_5error5ErrorEL_EEB19_ECs9hI5a4yEjwJ_4main
+	mov	rcx, rax
+	call	_RNvXs13_NtCs8jAdlnFBhmc_3std7processINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBD_5error5ErrorEL_EENtB6_11Termination6reportCs9hI5a4yEjwJ_4main
+	nop
+	.seh_startepilogue
+	add	rsp, 40
+	.seh_endepilogue
+	ret
+	.seh_endproc
 
-	.section	.text._RNSNvYNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBN_5error5ErrorEL_EEE0INtNtNtBN_3ops8function6FnOnceuE9call_once6vtableCs9hI5a4yEjwJ_4main,"ax",@progbits
+	.def	_RNSNvYNCINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBN_5error5ErrorEL_EEE0INtNtNtBN_3ops8function6FnOnceuE9call_once6vtableCs9hI5a4yEjwJ_4main;
+	.scl	3;
+	.type	32;
+	.endef
 	.p2align	4
-	.type	_RNSNvYNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBN_5error5ErrorEL_EEE0INtNtNtBN_3ops8function6FnOnceuE9call_once6vtableCs9hI5a4yEjwJ_4main,@function
-_RNSNvYNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBN_5error5ErrorEL_EEE0INtNtNtBN_3ops8function6FnOnceuE9call_once6vtableCs9hI5a4yEjwJ_4main:
-	.cfi_startproc
-	pushq	%rax
-	.cfi_def_cfa_offset 16
-	movq	(%rdi), %rdi
-	callq	_RNvYNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBL_5error5ErrorEL_EEE0INtNtNtBL_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main
-	popq	%rcx
-	.cfi_def_cfa_offset 8
-	retq
-.Lfunc_end5:
-	.size	_RNSNvYNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBN_5error5ErrorEL_EEE0INtNtNtBN_3ops8function6FnOnceuE9call_once6vtableCs9hI5a4yEjwJ_4main, .Lfunc_end5-_RNSNvYNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBN_5error5ErrorEL_EEE0INtNtNtBN_3ops8function6FnOnceuE9call_once6vtableCs9hI5a4yEjwJ_4main
-	.cfi_endproc
+_RNSNvYNCINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBN_5error5ErrorEL_EEE0INtNtNtBN_3ops8function6FnOnceuE9call_once6vtableCs9hI5a4yEjwJ_4main:
+.seh_proc _RNSNvYNCINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBN_5error5ErrorEL_EEE0INtNtNtBN_3ops8function6FnOnceuE9call_once6vtableCs9hI5a4yEjwJ_4main
+	sub	rsp, 40
+	.seh_stackalloc 40
+	.seh_endprologue
+	mov	rcx, qword ptr [rcx]
+	call	_RNvYNCINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBL_5error5ErrorEL_EEE0INtNtNtBL_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main
+	nop
+	.seh_startepilogue
+	add	rsp, 40
+	.seh_endepilogue
+	ret
+	.seh_endproc
 
-	.section	.text._RNvCs9hI5a4yEjwJ_4main4main,"ax",@progbits
-	.hidden	_RNvCs9hI5a4yEjwJ_4main4main
+	.def	_RNvCs9hI5a4yEjwJ_4main4main;
+	.scl	2;
+	.type	32;
+	.endef
 	.globl	_RNvCs9hI5a4yEjwJ_4main4main
 	.p2align	4
-	.type	_RNvCs9hI5a4yEjwJ_4main4main,@function
 _RNvCs9hI5a4yEjwJ_4main4main:
-	.cfi_startproc
-	xorl	%eax, %eax
-	retq
-.Lfunc_end6:
-	.size	_RNvCs9hI5a4yEjwJ_4main4main, .Lfunc_end6-_RNvCs9hI5a4yEjwJ_4main4main
-	.cfi_endproc
+	xor	eax, eax
+	ret
 
-	.section	.text._RNvNvMNtNtCs14RtPIW9FYI_4core3ptr9alignmentNtB4_9Alignment13new_unchecked18precondition_checkCs9hI5a4yEjwJ_4main,"ax",@progbits
+	.def	_RNvNvMNtNtCse5rvls7Ejlv_4core3ptr9alignmentNtB4_9Alignment13new_unchecked18precondition_checkCs9hI5a4yEjwJ_4main;
+	.scl	3;
+	.type	32;
+	.endef
 	.p2align	4
-	.type	_RNvNvMNtNtCs14RtPIW9FYI_4core3ptr9alignmentNtB4_9Alignment13new_unchecked18precondition_checkCs9hI5a4yEjwJ_4main,@function
-_RNvNvMNtNtCs14RtPIW9FYI_4core3ptr9alignmentNtB4_9Alignment13new_unchecked18precondition_checkCs9hI5a4yEjwJ_4main:
-	.cfi_startproc
-	subq	$24, %rsp
-	.cfi_def_cfa_offset 32
-	movq	%rdi, %rcx
-	movq	%rsi, 8(%rsp)
-	movq	%rcx, %rax
-	shrq	%rax
-	movabsq	$6148914691236517205, %rdx
-	andq	%rdx, %rax
-	subq	%rax, %rcx
-	movabsq	$3689348814741910323, %rdx
-	movq	%rcx, %rax
-	andq	%rdx, %rax
-	shrq	$2, %rcx
-	andq	%rdx, %rcx
-	addq	%rcx, %rax
-	movq	%rax, %rcx
-	shrq	$4, %rcx
-	addq	%rcx, %rax
-	movabsq	$1085102592571150095, %rcx
-	andq	%rcx, %rax
-	movabsq	$72340172838076673, %rcx
-	imulq	%rcx, %rax
-	shrq	$56, %rax
-	movl	%eax, 20(%rsp)
-	cmpl	$1, 20(%rsp)
+_RNvNvMNtNtCse5rvls7Ejlv_4core3ptr9alignmentNtB4_9Alignment13new_unchecked18precondition_checkCs9hI5a4yEjwJ_4main:
+.seh_proc _RNvNvMNtNtCse5rvls7Ejlv_4core3ptr9alignmentNtB4_9Alignment13new_unchecked18precondition_checkCs9hI5a4yEjwJ_4main
+	sub	rsp, 56
+	.seh_stackalloc 56
+	.seh_endprologue
+	mov	qword ptr [rsp + 40], rdx
+	mov	rax, rcx
+	shr	rax
+	movabs	rdx, 6148914691236517205
+	and	rax, rdx
+	sub	rcx, rax
+	movabs	rdx, 3689348814741910323
+	mov	rax, rcx
+	and	rax, rdx
+	shr	rcx, 2
+	and	rcx, rdx
+	add	rax, rcx
+	mov	rcx, rax
+	shr	rcx, 4
+	add	rax, rcx
+	movabs	rcx, 1085102592571150095
+	and	rax, rcx
+	movabs	rcx, 72340172838076673
+	imul	rax, rcx
+	shr	rax, 56
+	mov	dword ptr [rsp + 52], eax
+	cmp	dword ptr [rsp + 52], 1
 	jne	.LBB7_2
-	addq	$24, %rsp
-	.cfi_def_cfa_offset 8
-	retq
+	.seh_startepilogue
+	add	rsp, 56
+	.seh_endepilogue
+	ret
 .LBB7_2:
-	.cfi_def_cfa_offset 32
-	movq	8(%rsp), %rcx
-	leaq	.Lanon.0b37f76d925f7dd188429182aeed105f.1(%rip), %rdi
-	movl	$397, %esi
-	xorl	%edx, %edx
-	callq	*_RNvNtCs14RtPIW9FYI_4core9panicking18panic_nounwind_fmt@GOTPCREL(%rip)
-.Lfunc_end7:
-	.size	_RNvNvMNtNtCs14RtPIW9FYI_4core3ptr9alignmentNtB4_9Alignment13new_unchecked18precondition_checkCs9hI5a4yEjwJ_4main, .Lfunc_end7-_RNvNvMNtNtCs14RtPIW9FYI_4core3ptr9alignmentNtB4_9Alignment13new_unchecked18precondition_checkCs9hI5a4yEjwJ_4main
-	.cfi_endproc
+	mov	r9, qword ptr [rsp + 40]
+	lea	rcx, [rip + .Lanon.eb006c45fb93636ac51900f1e4542831.1]
+	mov	edx, 397
+	xor	r8d, r8d
+	call	_RNvNtCse5rvls7Ejlv_4core9panicking18panic_nounwind_fmt
+	int3
+	.seh_endproc
 
-	.section	.text._RNvNvMNtNtCs14RtPIW9FYI_4core5alloc6layoutNtB4_6Layout25from_size_align_unchecked18precondition_checkCs9hI5a4yEjwJ_4main,"ax",@progbits
+	.def	_RNvNvMNtNtCse5rvls7Ejlv_4core5alloc6layoutNtB4_6Layout25from_size_align_unchecked18precondition_checkCs9hI5a4yEjwJ_4main;
+	.scl	3;
+	.type	32;
+	.endef
 	.p2align	4
-	.type	_RNvNvMNtNtCs14RtPIW9FYI_4core5alloc6layoutNtB4_6Layout25from_size_align_unchecked18precondition_checkCs9hI5a4yEjwJ_4main,@function
-_RNvNvMNtNtCs14RtPIW9FYI_4core5alloc6layoutNtB4_6Layout25from_size_align_unchecked18precondition_checkCs9hI5a4yEjwJ_4main:
-	.cfi_startproc
-	subq	$40, %rsp
-	.cfi_def_cfa_offset 48
-	movq	%rsi, %rcx
-	movq	%rdi, 8(%rsp)
-	movq	%rcx, 16(%rsp)
-	movq	%rdx, 24(%rsp)
-	movq	%rcx, %rax
-	shrq	%rax
-	movabsq	$6148914691236517205, %rdx
-	andq	%rdx, %rax
-	subq	%rax, %rcx
-	movabsq	$3689348814741910323, %rdx
-	movq	%rcx, %rax
-	andq	%rdx, %rax
-	shrq	$2, %rcx
-	andq	%rdx, %rcx
-	addq	%rcx, %rax
-	movq	%rax, %rcx
-	shrq	$4, %rcx
-	addq	%rcx, %rax
-	movabsq	$1085102592571150095, %rcx
-	andq	%rcx, %rax
-	movabsq	$72340172838076673, %rcx
-	imulq	%rcx, %rax
-	shrq	$56, %rax
-	movl	%eax, 36(%rsp)
-	cmpl	$1, 36(%rsp)
+_RNvNvMNtNtCse5rvls7Ejlv_4core5alloc6layoutNtB4_6Layout25from_size_align_unchecked18precondition_checkCs9hI5a4yEjwJ_4main:
+.seh_proc _RNvNvMNtNtCse5rvls7Ejlv_4core5alloc6layoutNtB4_6Layout25from_size_align_unchecked18precondition_checkCs9hI5a4yEjwJ_4main
+	sub	rsp, 72
+	.seh_stackalloc 72
+	.seh_endprologue
+	mov	qword ptr [rsp + 40], r8
+	mov	qword ptr [rsp + 48], rdx
+	mov	rax, rcx
+	mov	rcx, qword ptr [rsp + 48]
+	mov	qword ptr [rsp + 56], rax
+	mov	rax, rcx
+	shr	rax
+	movabs	rdx, 6148914691236517205
+	and	rax, rdx
+	sub	rcx, rax
+	movabs	rdx, 3689348814741910323
+	mov	rax, rcx
+	and	rax, rdx
+	shr	rcx, 2
+	and	rcx, rdx
+	add	rax, rcx
+	mov	rcx, rax
+	shr	rcx, 4
+	add	rax, rcx
+	movabs	rcx, 1085102592571150095
+	and	rax, rcx
+	movabs	rcx, 72340172838076673
+	imul	rax, rcx
+	shr	rax, 56
+	mov	dword ptr [rsp + 68], eax
+	cmp	dword ptr [rsp + 68], 1
 	jne	.LBB8_2
 	jmp	.LBB8_3
 .LBB8_2:
 	jmp	.LBB8_7
 .LBB8_3:
-	movq	16(%rsp), %rdi
-	leaq	.Lanon.0b37f76d925f7dd188429182aeed105f.3(%rip), %rsi
-	callq	_RNvNvMNtNtCs14RtPIW9FYI_4core3ptr9alignmentNtB4_9Alignment13new_unchecked18precondition_checkCs9hI5a4yEjwJ_4main
-	movq	8(%rsp), %rax
-	movq	16(%rsp), %rdx
-	movabsq	$-9223372036854775808, %rcx
-	subq	%rdx, %rcx
-	cmpq	%rcx, %rax
+	mov	rcx, qword ptr [rsp + 48]
+	lea	rdx, [rip + .Lanon.eb006c45fb93636ac51900f1e4542831.3]
+	call	_RNvNvMNtNtCse5rvls7Ejlv_4core3ptr9alignmentNtB4_9Alignment13new_unchecked18precondition_checkCs9hI5a4yEjwJ_4main
+	mov	rax, qword ptr [rsp + 56]
+	mov	rdx, qword ptr [rsp + 48]
+	movabs	rcx, -9223372036854775808
+	sub	rcx, rdx
+	cmp	rax, rcx
 	ja	.LBB8_6
-	addq	$40, %rsp
-	.cfi_def_cfa_offset 8
-	retq
+	.seh_startepilogue
+	add	rsp, 72
+	.seh_endepilogue
+	ret
 .LBB8_6:
-	.cfi_def_cfa_offset 48
 	jmp	.LBB8_7
 .LBB8_7:
-	movq	24(%rsp), %rcx
-	leaq	.Lanon.0b37f76d925f7dd188429182aeed105f.4(%rip), %rdi
-	movl	$563, %esi
-	xorl	%edx, %edx
-	callq	*_RNvNtCs14RtPIW9FYI_4core9panicking18panic_nounwind_fmt@GOTPCREL(%rip)
-.Lfunc_end8:
-	.size	_RNvNvMNtNtCs14RtPIW9FYI_4core5alloc6layoutNtB4_6Layout25from_size_align_unchecked18precondition_checkCs9hI5a4yEjwJ_4main, .Lfunc_end8-_RNvNvMNtNtCs14RtPIW9FYI_4core5alloc6layoutNtB4_6Layout25from_size_align_unchecked18precondition_checkCs9hI5a4yEjwJ_4main
-	.cfi_endproc
+	mov	r9, qword ptr [rsp + 40]
+	lea	rcx, [rip + .Lanon.eb006c45fb93636ac51900f1e4542831.4]
+	mov	edx, 563
+	xor	r8d, r8d
+	call	_RNvNtCse5rvls7Ejlv_4core9panicking18panic_nounwind_fmt
+	int3
+	.seh_endproc
 
-	.section	.text._RNvXs13_NtCs4gskUJO80SH_3std7processINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBD_5error5ErrorEL_EENtB6_11Termination6reportCs9hI5a4yEjwJ_4main,"ax",@progbits
+	.def	_RNvXs13_NtCs8jAdlnFBhmc_3std7processINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBD_5error5ErrorEL_EENtB6_11Termination6reportCs9hI5a4yEjwJ_4main;
+	.scl	3;
+	.type	32;
+	.endef
 	.p2align	4
-	.type	_RNvXs13_NtCs4gskUJO80SH_3std7processINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBD_5error5ErrorEL_EENtB6_11Termination6reportCs9hI5a4yEjwJ_4main,@function
-_RNvXs13_NtCs4gskUJO80SH_3std7processINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBD_5error5ErrorEL_EENtB6_11Termination6reportCs9hI5a4yEjwJ_4main:
+_RNvXs13_NtCs8jAdlnFBhmc_3std7processINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBD_5error5ErrorEL_EENtB6_11Termination6reportCs9hI5a4yEjwJ_4main:
 .Lfunc_begin1:
-	.cfi_startproc
-	.cfi_personality 155, DW.ref.rust_eh_personality
-	.cfi_lsda 27, .Lexception1
-	subq	$120, %rsp
-	.cfi_def_cfa_offset 128
-	movq	%rdi, 8(%rsp)
-	movq	%rsi, 16(%rsp)
-	movq	8(%rsp), %rdx
-	movl	$1, %eax
-	xorl	%ecx, %ecx
-	cmpq	$0, %rdx
-	cmoveq	%rcx, %rax
-	testq	$1, %rax
+.seh_proc _RNvXs13_NtCs8jAdlnFBhmc_3std7processINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBD_5error5ErrorEL_EENtB6_11Termination6reportCs9hI5a4yEjwJ_4main
+	.seh_handler rust_eh_personality, @unwind, @except
+	sub	rsp, 152
+	.seh_stackalloc 152
+	.seh_endprologue
+	mov	qword ptr [rsp + 40], rcx
+	mov	qword ptr [rsp + 48], rdx
+	mov	rdx, qword ptr [rsp + 40]
+	mov	eax, 1
+	xor	ecx, ecx
+	cmp	rdx, 0
+	cmove	rax, rcx
+	test	rax, 1
 	je	.LBB9_2
-	movq	8(%rsp), %rcx
-	movq	16(%rsp), %rax
-	movq	%rcx, 32(%rsp)
-	movq	%rax, 40(%rsp)
-	leaq	32(%rsp), %rax
-	movq	%rax, 88(%rsp)
-	leaq	_RNvXsn_NtCs5ZIj6FPPb5P_5alloc5boxedINtB5_3BoxDNtNtCs14RtPIW9FYI_4core5error5ErrorEL_ENtNtBM_3fmt5Debug3fmtCs9hI5a4yEjwJ_4main(%rip), %rax
-	movq	%rax, 96(%rsp)
-	movups	88(%rsp), %xmm0
-	movaps	%xmm0, 64(%rsp)
-	movaps	64(%rsp), %xmm0
-	movaps	%xmm0, 48(%rsp)
+	mov	rcx, qword ptr [rsp + 40]
+	mov	rax, qword ptr [rsp + 48]
+	mov	qword ptr [rsp + 64], rcx
+	mov	qword ptr [rsp + 72], rax
+	lea	rax, [rsp + 64]
+	mov	qword ptr [rsp + 120], rax
+	lea	rax, [rip + _RNvXsn_NtCs74qXAvjHuUt_5alloc5boxedINtB5_3BoxDNtNtCse5rvls7Ejlv_4core5error5ErrorEL_ENtNtBM_3fmt5Debug3fmtCs9hI5a4yEjwJ_4main]
+	mov	qword ptr [rsp + 128], rax
+	movups	xmm0, xmmword ptr [rsp + 120]
+	movaps	xmmword ptr [rsp + 96], xmm0
+	movaps	xmm0, xmmword ptr [rsp + 96]
+	movaps	xmmword ptr [rsp + 80], xmm0
 .Ltmp6:
-	leaq	.Lanon.0b37f76d925f7dd188429182aeed105f.5(%rip), %rdi
-	movq	_RNvNtNtCs4gskUJO80SH_3std2io5stdio23attempt_print_to_stderr@GOTPCREL(%rip), %rax
-	leaq	48(%rsp), %rsi
-	callq	*%rax
+	lea	rcx, [rip + .Lanon.eb006c45fb93636ac51900f1e4542831.5]
+	lea	rdx, [rsp + 80]
+	call	_RNvNtNtCs8jAdlnFBhmc_3std2io5stdio23attempt_print_to_stderr
 .Ltmp7:
 	jmp	.LBB9_6
 .LBB9_2:
-	callq	_RNvXsZ_NtCs4gskUJO80SH_3std7processuNtB5_11Termination6reportCs9hI5a4yEjwJ_4main
-	movb	%al, 31(%rsp)
+	call	_RNvXsZ_NtCs8jAdlnFBhmc_3std7processuNtB5_11Termination6reportCs9hI5a4yEjwJ_4main
+	mov	dword ptr [rsp + 60], eax
 .LBB9_3:
-	movb	31(%rsp), %al
-	addq	$120, %rsp
-	.cfi_def_cfa_offset 8
-	retq
+	mov	eax, dword ptr [rsp + 60]
+	.seh_startepilogue
+	add	rsp, 152
+	.seh_endepilogue
+	ret
 .LBB9_4:
-	.cfi_def_cfa_offset 128
 .Ltmp9:
-	leaq	32(%rsp), %rdi
-	callq	_RINvNtCs14RtPIW9FYI_4core3ptr13drop_in_placeINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB4_5error5ErrorEL_EECs9hI5a4yEjwJ_4main
+	lea	rcx, [rsp + 64]
+	call	_RINvNtCse5rvls7Ejlv_4core3ptr13drop_in_placeINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtB4_5error5ErrorEL_EECs9hI5a4yEjwJ_4main
 .Ltmp10:
 	jmp	.LBB9_8
 .LBB9_5:
 .Ltmp8:
-	movq	%rax, %rcx
-	movl	%edx, %eax
-	movq	%rcx, 104(%rsp)
-	movl	%eax, 112(%rsp)
+	mov	rcx, rax
+	mov	eax, edx
+	mov	qword ptr [rsp + 136], rcx
+	mov	dword ptr [rsp + 144], eax
 	jmp	.LBB9_4
 .LBB9_6:
-	movb	$1, 31(%rsp)
-	leaq	32(%rsp), %rdi
-	callq	_RINvNtCs14RtPIW9FYI_4core3ptr13drop_in_placeINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB4_5error5ErrorEL_EECs9hI5a4yEjwJ_4main
+	mov	dword ptr [rsp + 60], 1
+	lea	rcx, [rsp + 64]
+	call	_RINvNtCse5rvls7Ejlv_4core3ptr13drop_in_placeINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtB4_5error5ErrorEL_EECs9hI5a4yEjwJ_4main
 	jmp	.LBB9_3
 .LBB9_7:
 .Ltmp11:
-	callq	*_RNvNtCs14RtPIW9FYI_4core9panicking16panic_in_cleanup@GOTPCREL(%rip)
+	call	_RNvNtCse5rvls7Ejlv_4core9panicking16panic_in_cleanup
 .LBB9_8:
-	movq	104(%rsp), %rdi
-	callq	_Unwind_Resume@PLT
-.Lfunc_end9:
-	.size	_RNvXs13_NtCs4gskUJO80SH_3std7processINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBD_5error5ErrorEL_EENtB6_11Termination6reportCs9hI5a4yEjwJ_4main, .Lfunc_end9-_RNvXs13_NtCs4gskUJO80SH_3std7processINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBD_5error5ErrorEL_EENtB6_11Termination6reportCs9hI5a4yEjwJ_4main
-	.cfi_endproc
-	.section	.gcc_except_table._RNvXs13_NtCs4gskUJO80SH_3std7processINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBD_5error5ErrorEL_EENtB6_11Termination6reportCs9hI5a4yEjwJ_4main,"a",@progbits
+	mov	rcx, qword ptr [rsp + 136]
+	call	_Unwind_Resume
+	int3
+.Lfunc_end1:
+	.seh_handlerdata
+	.text
+	.seh_endproc
+	.section	.xdata,"dr"
 	.p2align	2, 0x0
 GCC_except_table9:
 .Lexception1:
 	.byte	255
-	.byte	155
+	.byte	0
 	.uleb128 .Lttbase1-.Lttbaseref1
 .Lttbaseref1:
 	.byte	1
@@ -405,7 +435,7 @@ GCC_except_table9:
 	.uleb128 .Ltmp11-.Lfunc_begin1
 	.byte	1
 	.uleb128 .Ltmp10-.Lfunc_begin1
-	.uleb128 .Lfunc_end9-.Ltmp10
+	.uleb128 .Lfunc_end1-.Ltmp10
 	.byte	0
 	.byte	0
 .Lcst_end1:
@@ -415,158 +445,168 @@ GCC_except_table9:
 .Lttbase1:
 	.byte	0
 	.p2align	2, 0x0
+	.text
 
-	.section	.text._RNvXs8_NtCs5ZIj6FPPb5P_5alloc5boxedINtB5_3BoxDNtNtCs14RtPIW9FYI_4core5error5ErrorEL_ENtNtNtBM_3ops4drop4Drop4dropCs9hI5a4yEjwJ_4main,"ax",@progbits
+	.def	_RNvXs8_NtCs74qXAvjHuUt_5alloc5boxedINtB5_3BoxDNtNtCse5rvls7Ejlv_4core5error5ErrorEL_ENtNtNtBM_3ops4drop4Drop4dropCs9hI5a4yEjwJ_4main;
+	.scl	3;
+	.type	32;
+	.endef
 	.p2align	4
-	.type	_RNvXs8_NtCs5ZIj6FPPb5P_5alloc5boxedINtB5_3BoxDNtNtCs14RtPIW9FYI_4core5error5ErrorEL_ENtNtNtBM_3ops4drop4Drop4dropCs9hI5a4yEjwJ_4main,@function
-_RNvXs8_NtCs5ZIj6FPPb5P_5alloc5boxedINtB5_3BoxDNtNtCs14RtPIW9FYI_4core5error5ErrorEL_ENtNtNtBM_3ops4drop4Drop4dropCs9hI5a4yEjwJ_4main:
-	.cfi_startproc
-	subq	$56, %rsp
-	.cfi_def_cfa_offset 64
-	movq	%rdi, 8(%rsp)
-	movq	(%rdi), %rax
-	movq	%rax, 16(%rsp)
-	movq	8(%rdi), %rax
-	movq	8(%rax), %rcx
-	movq	%rcx, 40(%rsp)
-	movq	40(%rsp), %rcx
-	movq	%rcx, 24(%rsp)
-	movq	16(%rax), %rax
-	movq	%rax, 48(%rsp)
-	movq	48(%rsp), %rax
-	movq	%rax, 32(%rsp)
-	movq	32(%rsp), %rsi
-	movq	24(%rsp), %rdi
-	leaq	.Lanon.0b37f76d925f7dd188429182aeed105f.7(%rip), %rdx
-	callq	_RNvNvMNtNtCs14RtPIW9FYI_4core5alloc6layoutNtB4_6Layout25from_size_align_unchecked18precondition_checkCs9hI5a4yEjwJ_4main
-	movq	24(%rsp), %rax
-	cmpq	$0, %rax
+_RNvXs8_NtCs74qXAvjHuUt_5alloc5boxedINtB5_3BoxDNtNtCse5rvls7Ejlv_4core5error5ErrorEL_ENtNtNtBM_3ops4drop4Drop4dropCs9hI5a4yEjwJ_4main:
+.seh_proc _RNvXs8_NtCs74qXAvjHuUt_5alloc5boxedINtB5_3BoxDNtNtCse5rvls7Ejlv_4core5error5ErrorEL_ENtNtNtBM_3ops4drop4Drop4dropCs9hI5a4yEjwJ_4main
+	sub	rsp, 88
+	.seh_stackalloc 88
+	.seh_endprologue
+	mov	qword ptr [rsp + 40], rcx
+	mov	rax, qword ptr [rcx]
+	mov	qword ptr [rsp + 48], rax
+	mov	rax, qword ptr [rcx + 8]
+	mov	rcx, qword ptr [rax + 8]
+	mov	qword ptr [rsp + 72], rcx
+	mov	rcx, qword ptr [rsp + 72]
+	mov	qword ptr [rsp + 56], rcx
+	mov	rax, qword ptr [rax + 16]
+	mov	qword ptr [rsp + 80], rax
+	mov	rax, qword ptr [rsp + 80]
+	mov	qword ptr [rsp + 64], rax
+	mov	rdx, qword ptr [rsp + 64]
+	mov	rcx, qword ptr [rsp + 56]
+	lea	r8, [rip + .Lanon.eb006c45fb93636ac51900f1e4542831.7]
+	call	_RNvNvMNtNtCse5rvls7Ejlv_4core5alloc6layoutNtB4_6Layout25from_size_align_unchecked18precondition_checkCs9hI5a4yEjwJ_4main
+	mov	rax, qword ptr [rsp + 56]
+	cmp	rax, 0
 	jne	.LBB10_4
 .LBB10_3:
-	addq	$56, %rsp
-	.cfi_def_cfa_offset 8
-	retq
+	.seh_startepilogue
+	add	rsp, 88
+	.seh_endepilogue
+	ret
 .LBB10_4:
-	.cfi_def_cfa_offset 64
-	movq	24(%rsp), %rcx
-	movq	32(%rsp), %rdx
-	movq	16(%rsp), %rsi
-	movq	8(%rsp), %rdi
-	addq	$16, %rdi
-	callq	_RNvXs_NtCs5ZIj6FPPb5P_5alloc5allocNtB4_6GlobalNtNtCs14RtPIW9FYI_4core5alloc9Allocator10deallocateCs9hI5a4yEjwJ_4main
+	mov	r9, qword ptr [rsp + 56]
+	mov	r8, qword ptr [rsp + 64]
+	mov	rdx, qword ptr [rsp + 48]
+	mov	rcx, qword ptr [rsp + 40]
+	add	rcx, 16
+	call	_RNvXs_NtCs74qXAvjHuUt_5alloc5allocNtB4_6GlobalNtNtCse5rvls7Ejlv_4core5alloc9Allocator10deallocateCs9hI5a4yEjwJ_4main
 	jmp	.LBB10_3
-.Lfunc_end10:
-	.size	_RNvXs8_NtCs5ZIj6FPPb5P_5alloc5boxedINtB5_3BoxDNtNtCs14RtPIW9FYI_4core5error5ErrorEL_ENtNtNtBM_3ops4drop4Drop4dropCs9hI5a4yEjwJ_4main, .Lfunc_end10-_RNvXs8_NtCs5ZIj6FPPb5P_5alloc5boxedINtB5_3BoxDNtNtCs14RtPIW9FYI_4core5error5ErrorEL_ENtNtNtBM_3ops4drop4Drop4dropCs9hI5a4yEjwJ_4main
-	.cfi_endproc
+	.seh_endproc
 
-	.section	.text._RNvXsZ_NtCs4gskUJO80SH_3std7processuNtB5_11Termination6reportCs9hI5a4yEjwJ_4main,"ax",@progbits
+	.def	_RNvXsZ_NtCs8jAdlnFBhmc_3std7processuNtB5_11Termination6reportCs9hI5a4yEjwJ_4main;
+	.scl	3;
+	.type	32;
+	.endef
 	.p2align	4
-	.type	_RNvXsZ_NtCs4gskUJO80SH_3std7processuNtB5_11Termination6reportCs9hI5a4yEjwJ_4main,@function
-_RNvXsZ_NtCs4gskUJO80SH_3std7processuNtB5_11Termination6reportCs9hI5a4yEjwJ_4main:
-	.cfi_startproc
-	xorl	%eax, %eax
-	retq
-.Lfunc_end11:
-	.size	_RNvXsZ_NtCs4gskUJO80SH_3std7processuNtB5_11Termination6reportCs9hI5a4yEjwJ_4main, .Lfunc_end11-_RNvXsZ_NtCs4gskUJO80SH_3std7processuNtB5_11Termination6reportCs9hI5a4yEjwJ_4main
-	.cfi_endproc
+_RNvXsZ_NtCs8jAdlnFBhmc_3std7processuNtB5_11Termination6reportCs9hI5a4yEjwJ_4main:
+	xor	eax, eax
+	ret
 
-	.section	.text._RNvXs_NtCs5ZIj6FPPb5P_5alloc5allocNtB4_6GlobalNtNtCs14RtPIW9FYI_4core5alloc9Allocator10deallocateCs9hI5a4yEjwJ_4main,"ax",@progbits
+	.def	_RNvXs_NtCs74qXAvjHuUt_5alloc5allocNtB4_6GlobalNtNtCse5rvls7Ejlv_4core5alloc9Allocator10deallocateCs9hI5a4yEjwJ_4main;
+	.scl	3;
+	.type	32;
+	.endef
 	.p2align	4
-	.type	_RNvXs_NtCs5ZIj6FPPb5P_5alloc5allocNtB4_6GlobalNtNtCs14RtPIW9FYI_4core5alloc9Allocator10deallocateCs9hI5a4yEjwJ_4main,@function
-_RNvXs_NtCs5ZIj6FPPb5P_5alloc5allocNtB4_6GlobalNtNtCs14RtPIW9FYI_4core5alloc9Allocator10deallocateCs9hI5a4yEjwJ_4main:
-	.cfi_startproc
-	subq	$24, %rsp
-	.cfi_def_cfa_offset 32
-	movq	%rsi, (%rsp)
-	movq	%rdx, 8(%rsp)
-	movq	%rcx, 16(%rsp)
-	cmpq	$0, %rcx
+_RNvXs_NtCs74qXAvjHuUt_5alloc5allocNtB4_6GlobalNtNtCse5rvls7Ejlv_4core5alloc9Allocator10deallocateCs9hI5a4yEjwJ_4main:
+.seh_proc _RNvXs_NtCs74qXAvjHuUt_5alloc5allocNtB4_6GlobalNtNtCse5rvls7Ejlv_4core5alloc9Allocator10deallocateCs9hI5a4yEjwJ_4main
+	sub	rsp, 56
+	.seh_stackalloc 56
+	.seh_endprologue
+	mov	qword ptr [rsp + 32], r9
+	mov	qword ptr [rsp + 40], r8
+	mov	qword ptr [rsp + 48], rdx
+	cmp	r9, 0
 	jne	.LBB12_2
 .LBB12_1:
-	addq	$24, %rsp
-	.cfi_def_cfa_offset 8
-	retq
+	.seh_startepilogue
+	add	rsp, 56
+	.seh_endepilogue
+	ret
 .LBB12_2:
-	.cfi_def_cfa_offset 32
-	movq	8(%rsp), %rdx
-	movq	16(%rsp), %rsi
-	movq	(%rsp), %rdi
-	callq	*_RNvCsgYTYUMny7tf_7___rustc14___rust_dealloc@GOTPCREL(%rip)
+	mov	r8, qword ptr [rsp + 40]
+	mov	rdx, qword ptr [rsp + 32]
+	mov	rcx, qword ptr [rsp + 48]
+	call	_RNvCsgYTYUMny7tf_7___rustc14___rust_dealloc
 	jmp	.LBB12_1
-.Lfunc_end12:
-	.size	_RNvXs_NtCs5ZIj6FPPb5P_5alloc5allocNtB4_6GlobalNtNtCs14RtPIW9FYI_4core5alloc9Allocator10deallocateCs9hI5a4yEjwJ_4main, .Lfunc_end12-_RNvXs_NtCs5ZIj6FPPb5P_5alloc5allocNtB4_6GlobalNtNtCs14RtPIW9FYI_4core5alloc9Allocator10deallocateCs9hI5a4yEjwJ_4main
-	.cfi_endproc
+	.seh_endproc
 
-	.section	.text._RNvXsn_NtCs5ZIj6FPPb5P_5alloc5boxedINtB5_3BoxDNtNtCs14RtPIW9FYI_4core5error5ErrorEL_ENtNtBM_3fmt5Debug3fmtCs9hI5a4yEjwJ_4main,"ax",@progbits
+	.def	_RNvXsn_NtCs74qXAvjHuUt_5alloc5boxedINtB5_3BoxDNtNtCse5rvls7Ejlv_4core5error5ErrorEL_ENtNtBM_3fmt5Debug3fmtCs9hI5a4yEjwJ_4main;
+	.scl	3;
+	.type	32;
+	.endef
 	.p2align	4
-	.type	_RNvXsn_NtCs5ZIj6FPPb5P_5alloc5boxedINtB5_3BoxDNtNtCs14RtPIW9FYI_4core5error5ErrorEL_ENtNtBM_3fmt5Debug3fmtCs9hI5a4yEjwJ_4main,@function
-_RNvXsn_NtCs5ZIj6FPPb5P_5alloc5boxedINtB5_3BoxDNtNtCs14RtPIW9FYI_4core5error5ErrorEL_ENtNtBM_3fmt5Debug3fmtCs9hI5a4yEjwJ_4main:
-	.cfi_startproc
-	pushq	%rax
-	.cfi_def_cfa_offset 16
-	movq	%rdi, %rax
-	movq	(%rax), %rdi
-	movq	8(%rax), %rax
-	callq	*24(%rax)
-	andb	$1, %al
-	popq	%rcx
-	.cfi_def_cfa_offset 8
-	retq
-.Lfunc_end13:
-	.size	_RNvXsn_NtCs5ZIj6FPPb5P_5alloc5boxedINtB5_3BoxDNtNtCs14RtPIW9FYI_4core5error5ErrorEL_ENtNtBM_3fmt5Debug3fmtCs9hI5a4yEjwJ_4main, .Lfunc_end13-_RNvXsn_NtCs5ZIj6FPPb5P_5alloc5boxedINtB5_3BoxDNtNtCs14RtPIW9FYI_4core5error5ErrorEL_ENtNtBM_3fmt5Debug3fmtCs9hI5a4yEjwJ_4main
-	.cfi_endproc
+_RNvXsn_NtCs74qXAvjHuUt_5alloc5boxedINtB5_3BoxDNtNtCse5rvls7Ejlv_4core5error5ErrorEL_ENtNtBM_3fmt5Debug3fmtCs9hI5a4yEjwJ_4main:
+.seh_proc _RNvXsn_NtCs74qXAvjHuUt_5alloc5boxedINtB5_3BoxDNtNtCse5rvls7Ejlv_4core5error5ErrorEL_ENtNtBM_3fmt5Debug3fmtCs9hI5a4yEjwJ_4main
+	sub	rsp, 40
+	.seh_stackalloc 40
+	.seh_endprologue
+	mov	rax, rcx
+	mov	rcx, qword ptr [rax]
+	mov	rax, qword ptr [rax + 8]
+	call	qword ptr [rax + 24]
+	and	al, 1
+	.seh_startepilogue
+	add	rsp, 40
+	.seh_endepilogue
+	ret
+	.seh_endproc
 
-	.section	.text._RNvYFEINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB9_5error5ErrorEL_EEINtNtNtB9_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main,"ax",@progbits
+	.def	_RNvYFEINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtB9_5error5ErrorEL_EEINtNtNtB9_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main;
+	.scl	3;
+	.type	32;
+	.endef
 	.p2align	4
-	.type	_RNvYFEINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB9_5error5ErrorEL_EEINtNtNtB9_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main,@function
-_RNvYFEINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB9_5error5ErrorEL_EEINtNtNtB9_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main:
-	.cfi_startproc
-	pushq	%rax
-	.cfi_def_cfa_offset 16
-	callq	*%rdi
-	popq	%rcx
-	.cfi_def_cfa_offset 8
-	retq
-.Lfunc_end14:
-	.size	_RNvYFEINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB9_5error5ErrorEL_EEINtNtNtB9_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main, .Lfunc_end14-_RNvYFEINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtB9_5error5ErrorEL_EEINtNtNtB9_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main
-	.cfi_endproc
+_RNvYFEINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtB9_5error5ErrorEL_EEINtNtNtB9_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main:
+.seh_proc _RNvYFEINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtB9_5error5ErrorEL_EEINtNtNtB9_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main
+	sub	rsp, 40
+	.seh_stackalloc 40
+	.seh_endprologue
+	call	rcx
+	nop
+	.seh_startepilogue
+	add	rsp, 40
+	.seh_endepilogue
+	ret
+	.seh_endproc
 
-	.section	.text._RNvYNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBL_5error5ErrorEL_EEE0INtNtNtBL_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main,"ax",@progbits
+	.def	_RNvYNCINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBL_5error5ErrorEL_EEE0INtNtNtBL_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main;
+	.scl	3;
+	.type	32;
+	.endef
 	.p2align	4
-	.type	_RNvYNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBL_5error5ErrorEL_EEE0INtNtNtBL_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main,@function
-_RNvYNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBL_5error5ErrorEL_EEE0INtNtNtBL_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main:
+_RNvYNCINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBL_5error5ErrorEL_EEE0INtNtNtBL_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main:
 .Lfunc_begin2:
-	.cfi_startproc
-	.cfi_personality 155, DW.ref.rust_eh_personality
-	.cfi_lsda 27, .Lexception2
-	subq	$40, %rsp
-	.cfi_def_cfa_offset 48
-	movq	%rdi, 8(%rsp)
+.seh_proc _RNvYNCINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBL_5error5ErrorEL_EEE0INtNtNtBL_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main
+	.seh_handler rust_eh_personality, @unwind, @except
+	sub	rsp, 72
+	.seh_stackalloc 72
+	.seh_endprologue
+	mov	qword ptr [rsp + 40], rcx
 .Ltmp12:
-	leaq	8(%rsp), %rdi
-	callq	_RNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBI_5error5ErrorEL_EEE0Cs9hI5a4yEjwJ_4main
+	lea	rcx, [rsp + 40]
+	call	_RNCINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBI_5error5ErrorEL_EEE0Cs9hI5a4yEjwJ_4main
 .Ltmp13:
-	movl	%eax, 4(%rsp)
+	mov	dword ptr [rsp + 36], eax
 	jmp	.LBB15_3
 .LBB15_1:
-	movq	24(%rsp), %rdi
-	callq	_Unwind_Resume@PLT
+	mov	rcx, qword ptr [rsp + 56]
+	call	_Unwind_Resume
 .LBB15_2:
 .Ltmp14:
-	movq	%rax, %rcx
-	movl	%edx, %eax
-	movq	%rcx, 24(%rsp)
-	movl	%eax, 32(%rsp)
+	mov	rcx, rax
+	mov	eax, edx
+	mov	qword ptr [rsp + 56], rcx
+	mov	dword ptr [rsp + 64], eax
 	jmp	.LBB15_1
 .LBB15_3:
-	movl	4(%rsp), %eax
-	addq	$40, %rsp
-	.cfi_def_cfa_offset 8
-	retq
-.Lfunc_end15:
-	.size	_RNvYNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBL_5error5ErrorEL_EEE0INtNtNtBL_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main, .Lfunc_end15-_RNvYNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBL_5error5ErrorEL_EEE0INtNtNtBL_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main
-	.cfi_endproc
-	.section	.gcc_except_table._RNvYNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBL_5error5ErrorEL_EEE0INtNtNtBL_3ops8function6FnOnceuE9call_onceCs9hI5a4yEjwJ_4main,"a",@progbits
+	mov	eax, dword ptr [rsp + 36]
+	.seh_startepilogue
+	add	rsp, 72
+	.seh_endepilogue
+	ret
+.Lfunc_end2:
+	.seh_handlerdata
+	.text
+	.seh_endproc
+	.section	.xdata,"dr"
 	.p2align	2, 0x0
 GCC_except_table15:
 .Lexception2:
@@ -580,94 +620,78 @@ GCC_except_table15:
 	.uleb128 .Ltmp14-.Lfunc_begin2
 	.byte	0
 	.uleb128 .Ltmp13-.Lfunc_begin2
-	.uleb128 .Lfunc_end15-.Ltmp13
+	.uleb128 .Lfunc_end2-.Ltmp13
 	.byte	0
 	.byte	0
 .Lcst_end2:
 	.p2align	2, 0x0
+	.text
 
-	.section	.text.main,"ax",@progbits
+	.def	main;
+	.scl	2;
+	.type	32;
+	.endef
 	.globl	main
 	.p2align	4
-	.type	main,@function
 main:
-	.cfi_startproc
-	pushq	%rax
-	.cfi_def_cfa_offset 16
-	movq	%rsi, %rdx
-	movslq	%edi, %rsi
-	leaq	_RNvCs9hI5a4yEjwJ_4main4main(%rip), %rdi
-	xorl	%ecx, %ecx
-	callq	_RINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBG_5error5ErrorEL_EEECs9hI5a4yEjwJ_4main
-	popq	%rcx
-	.cfi_def_cfa_offset 8
-	retq
-.Lfunc_end16:
-	.size	main, .Lfunc_end16-main
-	.cfi_endproc
+.seh_proc main
+	push	rbp
+	.seh_pushreg rbp
+	sub	rsp, 48
+	.seh_stackalloc 48
+	lea	rbp, [rsp + 48]
+	.seh_setframe rbp, 48
+	.seh_endprologue
+	mov	qword ptr [rbp - 8], rdx
+	mov	dword ptr [rbp - 12], ecx
+	call	__main
+	mov	ecx, dword ptr [rbp - 12]
+	mov	r8, qword ptr [rbp - 8]
+	movsxd	rdx, ecx
+	lea	rcx, [rip + _RNvCs9hI5a4yEjwJ_4main4main]
+	xor	r9d, r9d
+	call	_RINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBG_5error5ErrorEL_EEECs9hI5a4yEjwJ_4main
+	nop
+	.seh_startepilogue
+	add	rsp, 48
+	pop	rbp
+	.seh_endepilogue
+	ret
+	.seh_endproc
 
-	.type	.Lanon.0b37f76d925f7dd188429182aeed105f.0,@object
-	.section	.data.rel.ro..Lanon.0b37f76d925f7dd188429182aeed105f.0,"aw",@progbits
+	.section	.rdata,"dr"
 	.p2align	3, 0x0
-.Lanon.0b37f76d925f7dd188429182aeed105f.0:
+.Lanon.eb006c45fb93636ac51900f1e4542831.0:
 	.asciz	"\000\000\000\000\000\000\000\000\b\000\000\000\000\000\000\000\b\000\000\000\000\000\000"
-	.quad	_RNSNvYNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBN_5error5ErrorEL_EEE0INtNtNtBN_3ops8function6FnOnceuE9call_once6vtableCs9hI5a4yEjwJ_4main
-	.quad	_RNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBI_5error5ErrorEL_EEE0Cs9hI5a4yEjwJ_4main
-	.quad	_RNCINvNtCs4gskUJO80SH_3std2rt10lang_startINtNtCs14RtPIW9FYI_4core6result6ResultuINtNtCs5ZIj6FPPb5P_5alloc5boxed3BoxDNtNtBI_5error5ErrorEL_EEE0Cs9hI5a4yEjwJ_4main
-	.size	.Lanon.0b37f76d925f7dd188429182aeed105f.0, 48
+	.quad	_RNSNvYNCINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBN_5error5ErrorEL_EEE0INtNtNtBN_3ops8function6FnOnceuE9call_once6vtableCs9hI5a4yEjwJ_4main
+	.quad	_RNCINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBI_5error5ErrorEL_EEE0Cs9hI5a4yEjwJ_4main
+	.quad	_RNCINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBI_5error5ErrorEL_EEE0Cs9hI5a4yEjwJ_4main
 
-	.type	.Lanon.0b37f76d925f7dd188429182aeed105f.1,@object
-	.section	.rodata..Lanon.0b37f76d925f7dd188429182aeed105f.1,"a",@progbits
-.Lanon.0b37f76d925f7dd188429182aeed105f.1:
+.Lanon.eb006c45fb93636ac51900f1e4542831.1:
 	.ascii	"unsafe precondition(s) violated: Alignment::new_unchecked requires a power of two\n\nThis indicates a bug in the program. This Undefined Behavior check is optional, and cannot be relied on for safety."
-	.size	.Lanon.0b37f76d925f7dd188429182aeed105f.1, 198
 
-	.type	.Lanon.0b37f76d925f7dd188429182aeed105f.2,@object
-	.section	.rodata.str1.1,"aMS",@progbits,1
-.Lanon.0b37f76d925f7dd188429182aeed105f.2:
-	.asciz	"library/core/src/ptr/alignment.rs"
-	.size	.Lanon.0b37f76d925f7dd188429182aeed105f.2, 34
+.Lanon.eb006c45fb93636ac51900f1e4542831.2:
+	.asciz	"library\\core\\src\\ptr\\alignment.rs"
 
-	.type	.Lanon.0b37f76d925f7dd188429182aeed105f.3,@object
-	.section	.data.rel.ro..Lanon.0b37f76d925f7dd188429182aeed105f.3,"aw",@progbits
 	.p2align	3, 0x0
-.Lanon.0b37f76d925f7dd188429182aeed105f.3:
-	.quad	.Lanon.0b37f76d925f7dd188429182aeed105f.2
+.Lanon.eb006c45fb93636ac51900f1e4542831.3:
+	.quad	.Lanon.eb006c45fb93636ac51900f1e4542831.2
 	.asciz	"!\000\000\000\000\000\000\000>\000\000\000\033\000\000"
-	.size	.Lanon.0b37f76d925f7dd188429182aeed105f.3, 24
 
-	.type	.Lanon.0b37f76d925f7dd188429182aeed105f.4,@object
-	.section	.rodata..Lanon.0b37f76d925f7dd188429182aeed105f.4,"a",@progbits
-.Lanon.0b37f76d925f7dd188429182aeed105f.4:
+.Lanon.eb006c45fb93636ac51900f1e4542831.4:
 	.ascii	"unsafe precondition(s) violated: Layout::from_size_align_unchecked requires that align is a power of 2 and the rounded-up allocation size does not exceed isize::MAX\n\nThis indicates a bug in the program. This Undefined Behavior check is optional, and cannot be relied on for safety."
-	.size	.Lanon.0b37f76d925f7dd188429182aeed105f.4, 281
 
-	.type	.Lanon.0b37f76d925f7dd188429182aeed105f.5,@object
-	.section	.rodata.str1.1,"aMS",@progbits,1
-.Lanon.0b37f76d925f7dd188429182aeed105f.5:
+.Lanon.eb006c45fb93636ac51900f1e4542831.5:
 	.asciz	"\007Error: \300\001\n"
-	.size	.Lanon.0b37f76d925f7dd188429182aeed105f.5, 12
 
-	.type	.Lanon.0b37f76d925f7dd188429182aeed105f.6,@object
-.Lanon.0b37f76d925f7dd188429182aeed105f.6:
-	.asciz	"library/core/src/alloc/layout.rs"
-	.size	.Lanon.0b37f76d925f7dd188429182aeed105f.6, 33
+.Lanon.eb006c45fb93636ac51900f1e4542831.6:
+	.asciz	"library\\core\\src\\alloc\\layout.rs"
 
-	.type	.Lanon.0b37f76d925f7dd188429182aeed105f.7,@object
-	.section	.data.rel.ro..Lanon.0b37f76d925f7dd188429182aeed105f.7,"aw",@progbits
 	.p2align	3, 0x0
-.Lanon.0b37f76d925f7dd188429182aeed105f.7:
-	.quad	.Lanon.0b37f76d925f7dd188429182aeed105f.6
+.Lanon.eb006c45fb93636ac51900f1e4542831.7:
+	.quad	.Lanon.eb006c45fb93636ac51900f1e4542831.6
 	.asciz	" \000\000\000\000\000\000\000\323\000\000\000\022\000\000"
-	.size	.Lanon.0b37f76d925f7dd188429182aeed105f.7, 24
 
-	.hidden	DW.ref.rust_eh_personality
-	.weak	DW.ref.rust_eh_personality
-	.section	.data.DW.ref.rust_eh_personality,"awG",@progbits,DW.ref.rust_eh_personality,comdat
-	.p2align	3, 0x0
-	.type	DW.ref.rust_eh_personality,@object
-	.size	DW.ref.rust_eh_personality, 8
-DW.ref.rust_eh_personality:
-	.quad	rust_eh_personality
-	.ident	"rustc version 1.94.0-nightly (f794a0873 2025-12-17)"
-	.section	".note.GNU-stack","",@progbits
+	.section	.drectve,"yni"
+	.ascii	" -exclude-symbols:_RINvNtCs8jAdlnFBhmc_3std2rt10lang_startINtNtCse5rvls7Ejlv_4core6result6ResultuINtNtCs74qXAvjHuUt_5alloc5boxed3BoxDNtNtBG_5error5ErrorEL_EEECs9hI5a4yEjwJ_4main"
+	.ascii	" -exclude-symbols:_RNvCs9hI5a4yEjwJ_4main4main"
