@@ -1,0 +1,3 @@
+#!/bin/bash
+
+rustc --emit=asm $RSFILE
