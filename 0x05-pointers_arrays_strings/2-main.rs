@@ -9,8 +9,9 @@ use strlen_2::_strlen;
 fn main()
 {
     let str;
-    int len;
+    let len: u64;
 
-    str = "My first strlen!".to_string();
+    str = "My first strlen!";
     len = _strlen(str);
     println!("{}", len);
+}

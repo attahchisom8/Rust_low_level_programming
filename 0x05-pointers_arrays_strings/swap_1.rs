@@ -8,8 +8,8 @@
  * Return: void
  */
 
-fn swap_int(a: &mut i32, b: &mut 132) {
-    let mut temp: i32;
+pub fn swap_int(a: &mut i32, b: &mut i32) {
+    let temp: i32;
 
     temp = *a;
     *a = *b;

@@ -8,13 +8,13 @@
  * Return: length of the string
  */
 
-fn _strlen(s: &str) -> u64 {
-    let len: u64 = 0;
-    let str = Box<str>;
+pub fn _strlen(s: &str) -> u64 {
+    let mut len: u64 = 0;
+    let str: Box<str> = Box::from(s);
 
     for _ in str.chars() {
         len += 1;
     }
 
-    len;
+    len
 }
