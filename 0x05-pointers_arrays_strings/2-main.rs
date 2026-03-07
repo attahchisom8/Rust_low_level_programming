@@ -9,7 +9,7 @@ use strlen_2::_strlen;
 fn main()
 {
     let str;
-    int len;
+    len len: u64;
 
     str = "My first strlen!".to_string();
     len = _strlen(str);
