@@ -15,5 +15,5 @@ fn main()
     b = 42;
     println!("a={}, b={}", a, b);
     swap_int(&mut a, &mut b);
-    printf("a={}, b={}", a, b);
+    println!("a={}, b={}", a, b);
 }
