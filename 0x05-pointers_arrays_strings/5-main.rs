@@ -1,5 +1,5 @@
 mod rev_string_5;
-use rev_string_5::rev_str;
+use rev_string_5::rev_string;
 
 
 /**
@@ -9,7 +9,7 @@ use rev_string_5::rev_str;
 */
 fn main()
 {
-let s: [u8; 10] = *b"My School";
+let s: [char; 10] = *"My School";
 println!("{:?}", s);
 rev_string(s);
 println!("{:?}", s);

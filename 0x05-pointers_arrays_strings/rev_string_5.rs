@@ -1,32 +1,29 @@
-use std::rc::Rc;
-use std::cell::Refcell;
-
 /**
  * rev_string - function to reverse a string in place
  * @s: string to reverse
  *
- * Method: We will use the SMART lointwr method Rc<T>
+ * Method: We will use the REFERNCE pointer method
  *
  * Return: void
  */
 
- pub fn rev_string(s: &str) {
-	let cellStr = Refcell(s.to_string());
-	let mut rcStr = Rc(cellStr);
+ pub fn rev_string(s: mut Vec<char>) {
+	let mut s = s.to_vec().chars().collect();s
 	let mut len = 0;
 
-	for _ in s.chars() {
+	for _ in s {
 		len += 1;
 	}
 	let start = 0;
 	let end = len - 1;
 
-	while start >= end {
-		let temp = rcStr.add(start);
+	while start <= end {
+		let temp = s[start];
 
-		rcStr.add(start) = rcStr.add(end);
-		rcStr.add(end) = temp;
+		s[start] = s[end];
+		s[end] = temp;
 		start += 1;
 		end -= 1;
 	}
+	s.into_iter().collect();
  }
