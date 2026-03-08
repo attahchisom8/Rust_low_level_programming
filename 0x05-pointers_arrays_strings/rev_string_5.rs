@@ -7,15 +7,18 @@
  * Return: void
  */
 
- pub fn rev_string(s: mut Vec<char>) {
-	let mut s = s.to_vec().chars().collect();s
+ pub fn rev_string(s: &mut [u8]) {
 	let mut len = 0;
 
-	for _ in s {
+	for _ in s.iter() {
 		len += 1;
 	}
-	let start = 0;
-	let end = len - 1;
+        if len == 0 {
+            return;
+        }
+
+	let mut start = 0;
+	let mut end = len - 1;
 
 	while start <= end {
 		let temp = s[start];
@@ -25,5 +28,4 @@
 		start += 1;
 		end -= 1;
 	}
-	s.into_iter().collect();
  }

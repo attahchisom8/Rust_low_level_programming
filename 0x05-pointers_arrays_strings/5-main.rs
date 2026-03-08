@@ -9,8 +9,13 @@ use rev_string_5::rev_string;
 */
 fn main()
 {
-let s: [char; 10] = *"My School";
-println!("{:?}", s);
-rev_string(s);
-println!("{:?}", s);
+let mut s: [u8; 9] = *b"My School";
+s.iter().for_each(|&item| {
+    println("{}", item as char);
+});
+rev_string(&mut s);
+s.iter().for_each(|&item| {
+    print("{}", item as char);
+});
+// println!("{:?}", s);
 }
