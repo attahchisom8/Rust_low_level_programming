@@ -1,5 +1,6 @@
 mod rev_string_5;
 use rev_string_5::rev_string;
+use std::io::{self, Write};
 
 
 /**
@@ -9,13 +10,17 @@ use rev_string_5::rev_string;
 */
 fn main()
 {
-let mut s: [u8; 9] = *b"My School";
-s.iter().for_each(|&item| {
-    println("{}", item as char);
-});
-rev_string(&mut s);
-s.iter().for_each(|&item| {
-    print("{}", item as char);
-});
-// println!("{:?}", s);
+    let mut s: [u8; 9] = *b"My School";
+    s.iter().for_each(|&item| {
+    print!("{}", item as char);
+    });
+    println!();
+
+    rev_string(&mut s);
+    s.iter().for_each(|&item| {
+    print!("{}", item as char);
+    });
+    // println!("{:?}", s);
+    io::stdout().flush().unwrap();
+    println!();
 }
