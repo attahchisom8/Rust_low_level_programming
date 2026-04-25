@@ -8,14 +8,16 @@
  */
 
 pub fn _strcmp<'a>(s1: &'a [u8], s2: &'a [u8]) -> i32 {
-	let mut ptr1 = *const si;
-	let mut ptr2 = *const s2;
+	let mut ptr1: *const u8 =  s1.as_ptr();
+	let mut ptr2: *const u8 =  s2.as_ptr();
 
-	while (*ptr1 != 0u8) && (*ptr1 == *ptr2) {
+	unsafe {
+            while (*ptr1 != 0u8) && (*ptr1 == *ptr2) {
 		ptr1 = ptr1.offset(1);
 		ptr2 = ptr2.offset(1);
-	}
+	    }
 
-	*ptr1 - *ptr2
+            *ptr1 as i32 - *ptr2 as i32
+        }
 }
 
