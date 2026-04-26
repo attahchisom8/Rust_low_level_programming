@@ -9,10 +9,8 @@
  */
 
 fn to_upper(mut c: u8) -> u8 {
-    for k in 97..=122 {
-        if c == k {
-            c = k - 32;
-        }
+    if c >= 97 && c <= 122 {
+        c -= 32;
     }
     c
 }
@@ -27,20 +25,20 @@ fn to_upper(mut c: u8) -> u8 {
  */
 
  pub fn cap_string(str: &mut [u8]) -> &[u8] {
-    const Delims: [char; 13] = ['\t', '\n', ' ', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'];
-    let k: usize = 0;
-    let len = 0;
+    const DELIMS: [char; 13]= ['\t', '\n', ' ', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'];
+    let mut k: usize = 0;
+    let mut len = 0;
 
     while str[len] != 0u8 {
         len += 1;
     }
 
-    str[0] = to_upper(mut str[0]);
+    str[0] = to_upper(str[0]);
 
     while str[k] != 0u8 {
-        for delim in &Delims {
+        for delim in &DELIMS {
             if str[k] == *delim as u8 && (k + 1) < len {
-                str[k + 1] = to_upper|(mut str[k + 1]);
+                str[k + 1] = to_upper(str[k + 1]);
                 break;
             }
         }
