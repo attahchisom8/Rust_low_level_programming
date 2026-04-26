@@ -15,6 +15,6 @@ fn main()
    * - you are not allowed to code anything else than this line of code
    */
   ;
-  *p.offset(5) = 98;
+  p[5] = 98;
   println!("a[2] = {}", a[2]);
 }

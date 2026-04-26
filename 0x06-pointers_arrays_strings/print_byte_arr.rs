@@ -8,18 +8,26 @@ use std::io::{self, Write};
  * Return: void
  */
 
-pub fn print_byte_arr(bytes_arr: &[u8]) {
+pub fn print_byte_arr(bytes_arr: &[u8]) -> String{
 	if bytes_arr.len() == 0 {
 		return;
 	}
+	let mut chars_arr: [char: bytes_arr.len()] = ['\0': bytes_arr.len()];
 	
-	bytes_arr.iter().any(|byte| {
+	bytes_arr.iter().enumerate().any(|idx, byte| {
 		if *byte == 0u8 {
 			return true;
 		}
 		print!("{}", *byte as char);
-		false
+		chars_arr[idx] = item;
+		return false;
 	});
-
 	io::stdout().flush().unwrap();
+
+	chars_arr.iter().collect()
+}
+
+fn main() {
+	let b = [b'a', b'b', 'c'];
+	print_byte_arr(b);
 }
