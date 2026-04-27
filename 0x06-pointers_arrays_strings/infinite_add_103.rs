@@ -55,7 +55,7 @@ pub fn infinite_add<'a>(
 	n2: &'a [u8],
 	r: &'a mut [u8],
 	size_r: usize
-) -> 'a &[u8] {
+) -> &'a [u8] {
 	let carry = 0;
 	let sum;
 	let dig1;
@@ -107,6 +107,6 @@ pub fn infinite_add<'a>(
 			*r.offset(k) = carry as u8 + b'0';
 		}
 
-		rev_str(r);
+		rev_str(r)
 	}
 }
