@@ -67,8 +67,8 @@ fn main()
         else
         {
                 print!("{} + {} = {}\n", print_byte_arr(&n),
-								print_ byte_arr(&m),
-								print_byte_arr(&res));
+                print_ byte_arr(&m),
+                print_byte_arr(&res));
         }
         io::stdout().flush().unwrap();
 }
