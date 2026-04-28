@@ -22,7 +22,6 @@
 fn rev_str(str: &mut [u8]) -> &[u8] {
 	let mut start: *mut u8 = str.as_mut_ptr();
 	let mut end;
-        // println!("str b4 reverse: {:?}", str);
 
 	unsafe {
                 end = start;
@@ -30,7 +29,6 @@ fn rev_str(str: &mut [u8]) -> &[u8] {
 			end = end.add(1);
 		}
                 end = end.sub(1);
-                // println!("*start: {}, *end: {}", *start, *end);
 
 		while start < end {
 			let temp: u8 = *start;
@@ -39,7 +37,6 @@ fn rev_str(str: &mut [u8]) -> &[u8] {
 			start = start.add(1);
 			end = end.sub(1);
 		}
-                // println!("str after reberse: {:?}", str);
 
 		str
 	}
@@ -71,8 +68,6 @@ pub fn infinite_add<'a>(
 	let (mut len_n1, mut len_n2) = (0, 0);
 	let longest;
         let mut k: isize = 0;
-        let mut p1: Vec<u8> = n1.to_vec();
-        let mut p2: Vec<u8> = n2.to_vec();
 
 	while n1[len_n1] != 0u8 {
 		len_n1 += 1;
@@ -85,45 +80,51 @@ pub fn infinite_add<'a>(
 	} else {
 		longest = len_n2;
 	}
-
-	let m1: *const u8 = rev_str(&mut p1).as_ptr();
-	let m2: *const u8 = rev_str(&mut p2).as_ptr();
-        let rr: *mut u8 = r.as_mut_ptr();
+        let (p1, p2) = (len_n1 - 1, len_n2 - 1);
 
 	unsafe {
-		while k < longest as isize {
-			if m1.offset(k).is_null() {
-				dig1 = 0;
-			} else {
-				dig1 = to_digit(*m1.offset(k));
-			}
+            let m1: *const u8 = n1.as_ptr();
+            let mut m1_end = m1.offset(p1 as isize);
+            let m2: *const u8 = n2.as_ptr();
+            let mut m2_end = m2.offset(p2 as isize);
+            let rr: *mut u8 = r.as_mut_ptr();
 
-			if m2.offset(k).is_null() {
-				dig2 = 0;
-			} else {
-				dig2 = to_digit(*m2.offset(k));
-			}
 
-			sum = dig1 + dig2 + carry;
-                        println!("dig1: {}, dig2: {}, carry: {}, sum: {}", dig1, dig2, carry, sum);
-			carry = sum / 10;
-                        println!("k: {} , size_r: {}", k, size_r);
-			if k >= (size_r - 1) as isize {
-				return Err(0);
-			}
-			*rr.offset(k) = (sum % 10) as u8 + 48;
-                        k += 1;
+            while k < longest as isize {
+                if m1_end < m1 {
+                    dig1 = 0;
+                } else {
+		    dig1 = to_digit(*m1_end);
 		}
 
-		if carry > 0 {
-			if k >= (size_r - 1) as isize {
-				return Err(0);
-			}
-			*rr.offset(k) = carry as u8 + 48;
+		if m2_end < m2 {
+		    dig2 = 0;
+		} else {
+		    dig2 = to_digit(*m2_end);
 		}
-                // println!("r before rev: {:?}", r);
 
-		Ok(rev_str(r))
-                // println!("r after rev: {:?}", r);
-	}
+		sum = dig1 + dig2 + carry;
+		carry = sum / 10;
+		if k >= size_r as isize {
+                    return Err(0);
+		}
+		*rr.offset(k) = (sum % 10) as u8 + 48;
+                k += 1;
+                m1_end = m1_end.offset(-1);
+                m2_end = m2_end.offset(-1);
+            }
+
+            if carry > 0 {
+                if k >= size_r as isize {
+                    return Err(0);
+                }
+                *rr.offset(k) = carry as u8 + 48;
+                k += 1;
+            }
+            if k >= size_r as isize {
+                return Err(0);
+            }
+            *rr.offset(k) = 0u8;
+            Ok(rev_str(r))
+        }
 }

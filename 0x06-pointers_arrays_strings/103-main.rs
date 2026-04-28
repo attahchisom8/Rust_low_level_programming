@@ -1,7 +1,7 @@
 mod infinite_add_103;
 use infinite_add_103::infinite_add;
-mod print_byte_arr;
-use print_byte_arr::print_byte_arr;
+mod bytes_to_string;
+use bytes_to_string::bytes_to_string;
 use std::io::{self, Write};
 
 /**
@@ -25,9 +25,9 @@ fn main()
         match res {
             Err(0) => print!("Error\n"),
             Err(_) => print!("Other Error\n"),
-            Ok(val) => print!("{} + {} = {}\n", print_byte_arr(&n),
-            print_byte_arr(&m),
-            print_byte_arr(val)),
+            Ok(val) => print!("{} + {} = {}\n", bytes_to_string(&n),
+            bytes_to_string(&m),
+            bytes_to_string(val)),
         }
         nn = "1234567890\0".to_string();
 	n = nn.as_bytes_mut();
@@ -38,9 +38,9 @@ fn main()
         match res {
             Err(0) => print!("Error\n"),
             Err(_) => print!("Other Error\n"),
-            Ok(val) => print!("{} + {} = {}\n", print_byte_arr(&n),
-            print_byte_arr(&m),
-            print_byte_arr(val)),
+            Ok(val) => print!("{} + {} = {}\n", bytes_to_string(&n),
+            bytes_to_string(&m),
+            bytes_to_string(val)),
         }
         nn = "999999999\0".to_string();
         n = nn.as_bytes_mut();
@@ -51,18 +51,18 @@ fn main()
         match res {
             Err(0) => print!("Error\n"),
             Err(_) => print!("Other Error\n"),
-            Ok(val) => print!("{} + {} = {}\n", print_byte_arr(&n),
-            print_byte_arr(&m),
-            print_byte_arr(val)),
+            Ok(val) => print!("{} + {} = {}\n", bytes_to_string(&n),
+            bytes_to_string(&m),
+            bytes_to_string(val)),
         }
 
         res = infinite_add(&n, &m, &mut r3, 11);
         match res {
             Err(0) => print!("Error\n"),
             Err(_) => print!("Other Error\n"),
-            Ok(val) => print!("{} + {} = {}\n", print_byte_arr(&n),
-            print_byte_arr(&m),
-            print_byte_arr(val)),
+            Ok(val) => print!("{} + {} = {}\n", bytes_to_string(&n),
+            bytes_to_string(&m),
+            bytes_to_string(val)),
         }
         io::stdout().flush().unwrap();
     }
