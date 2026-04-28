@@ -19,59 +19,50 @@ fn main()
         let mut r: [u8; 100] = [0u8; 100];
         let mut r2: [u8; 10] = [0u8; 10];
         let mut r3: [u8; 11] = [0u8; 11];
-        let mut res: &[u8];
+        let mut res: Result<&[u8], i32>;
 
         res = infinite_add(&n, &m, &mut r, 100);
-        if res == [b'0']
-        {
-                print!("Error\n");
-        }
-        else
-        {
-                print!("{} + {} = {}\n", print_byte_arr(&n),
-								print_byte_arr(&m),
-								print_byte_arr(&res));
+        match res {
+            Err(0) => print!("Error\n"),
+            Err(_) => print!("Other Error\n"),
+            Ok(val) => print!("{} + {} = {}\n", print_byte_arr(&n),
+            print_byte_arr(&m),
+            print_byte_arr(val)),
         }
         nn = "1234567890\0".to_string();
 	n = nn.as_bytes_mut();
         mm = "1\0".to_string();
 	m = mm.as_bytes_mut();
+
         res = infinite_add(&n, &m, &mut r2, 10);
-        if res == [b'0']
-        {
-                print!("Error\n");
-        }
-        else
-        {
-                print!("{} + {} = {}\n", print_byte_arr(&n),
-								print_byte_arr(&m),
-								print_byte_arr(&res));
+        match res {
+            Err(0) => print!("Error\n"),
+            Err(_) => print!("Other Error\n"),
+            Ok(val) => print!("{} + {} = {}\n", print_byte_arr(&n),
+            print_byte_arr(&m),
+            print_byte_arr(val)),
         }
         nn = "999999999\0".to_string();
         n = nn.as_bytes_mut();
         mm = "1\0".to_string();
         m = mm.as_bytes_mut();
+
         res = infinite_add(&n, &m, &mut r2, 10);
-        if res == &[b'0']
-        {
-                print!("Error\n");
+        match res {
+            Err(0) => print!("Error\n"),
+            Err(_) => print!("Other Error\n"),
+            Ok(val) => print!("{} + {} = {}\n", print_byte_arr(&n),
+            print_byte_arr(&m),
+            print_byte_arr(val)),
         }
-        else
-        {
-                print!("{} + {} = {}\n", print_byte_arr(&n),
-								print_byte_arr(&m),
-								print_byte_arr(&res));
-        }
+
         res = infinite_add(&n, &m, &mut r3, 11);
-        if res == [b'0']
-        {
-                print!("Error\n");
-        }
-        else
-        {
-                print!("{} + {} = {}\n", print_byte_arr(&n),
-                print_byte_arr(&m),
-                print_byte_arr(&res));
+        match res {
+            Err(0) => print!("Error\n"),
+            Err(_) => print!("Other Error\n"),
+            Ok(val) => print!("{} + {} = {}\n", print_byte_arr(&n),
+            print_byte_arr(&m),
+            print_byte_arr(val)),
         }
         io::stdout().flush().unwrap();
     }

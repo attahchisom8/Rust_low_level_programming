@@ -7,7 +7,7 @@
 
  fn to_digit(mut c: u8) -> u8 {
      if c >= 48 && c <= 57 {
-         c -= 48;
+         c -= b'0';
      }
      c
  }
@@ -22,24 +22,25 @@
 fn rev_str(str: &mut [u8]) -> &[u8] {
 	let mut start: *mut u8 = str.as_mut_ptr();
 	let mut end;
-        // println!("str b4 reverse: {:?}", str);
+        println!("str b4 reverse: {:?}", str);
 
 	unsafe {
+                while *start == 0u8 {
+                    start = start.add(1);
+                }
                 end = start;
 		while *end != 0u8 {
 			end = end.add(1);
 		}
-                end = end.sub(1);
-                // println!("*start: {}, *end: {}", *start, *end);
 
-		while start < end {
+		while start <= end {
 			let temp: u8 = *start;
 			*start = *end;
 			*end = temp;
 			start = start.add(1);
 			end = end.sub(1);
 		}
-                // println!("str after reberse: {:?}", str);
+                println!("str after reberse: {:?}", str);
 
 		str
 	}
@@ -63,7 +64,7 @@ pub fn infinite_add<'a>(
 	n2: &'a [u8],
 	r: &'a mut [u8],
 	size_r: usize
-) -> Result<&'a [u8], i32> {
+) -> &'a [u8] {
 	let mut carry = 0;
 	let mut sum;
 	let mut dig1;
@@ -105,25 +106,21 @@ pub fn infinite_add<'a>(
 			}
 
 			sum = dig1 + dig2 + carry;
-                        println!("dig1: {}, dig2: {}, carry: {}, sum: {}", dig1, dig2, carry, sum);
 			carry = sum / 10;
-                        println!("k: {} , size_r: {}", k, size_r);
-			if k >= (size_r - 1) as isize {
-				return Err(0);
+			if k >= size_r as isize {
+				return &[b'0'];
 			}
-			*rr.offset(k) = (sum % 10) as u8 + 48;
+			*rr.offset(k) = (sum % 10) as u8 + b'0';
                         k += 1;
 		}
 
 		if carry > 0 {
-			if k >= (size_r - 1) as isize {
-				return Err(0);
+			if k >= size_r as isize {
+				return &[b'0'];
 			}
-			*rr.offset(k) = carry as u8 + 48;
+			*rr.offset(k) = carry as u8 + b'0';
 		}
-                // println!("r before rev: {:?}", r);
 
-		Ok(rev_str(r))
-                // println!("r after rev: {:?}", r);
+		rev_str(r)
 	}
 }
