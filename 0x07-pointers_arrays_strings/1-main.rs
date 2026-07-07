@@ -41,13 +41,13 @@ let mut buffer: [char; 98] = [0x00 as char; 98];
 let buffer2: [char; 98] = {
 	let mut arr = ['\0'; 98];
 	let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
-	for k in arr2 {
-		arr[k] = char::from_u32(k as u32).unwrap();
+	for (k, &item) in arr2.iter().enumerate() {
+		arr[k] = char::from_u32(item as u32).unwrap();
 	}
 	arr
 };
 simple_print_buffer(&buffer, 98);
-_memcpy(&mut buffer[49..], &buffer2, 10);
+_memcpy(&mut buffer[50..], &buffer2, 10);
 print!("-------------------------------------------------
 \n");
 simple_print_buffer(&buffer, 98);
